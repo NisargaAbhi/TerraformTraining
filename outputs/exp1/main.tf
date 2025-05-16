@@ -14,11 +14,11 @@ resource "aws_instance" "test_instance" {
 
 output "instance_id" {
   description = "The ID of the EC2 instance"
-  value       = aws_instance.example.id
+  value       = aws_instance.test_instance.id
 }
 
 output "public_ip" {
   description = "The public IP of the instance"
-  value       = aws_instance.example.public_ip
+  value       = aws_instance.test_instance.public_ip
 }
 
