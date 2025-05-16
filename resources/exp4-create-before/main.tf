@@ -3,12 +3,11 @@ provider "aws" {
 }
 
 resource "aws_instance" "web" {
-  count = 1
   # Amazon Linux Img 
-  ami = "ami-0b9f27b05e1de14e9"
+  ami = "ami-062f0cc54dbfd8ef1"
 
   # Ubuntu Linux Img 
-  #ami = "ami-0688ba7eeeeefe3cd"
+  #ami = "ami-0e35ddab05955cf57"
   instance_type = "t2.micro"
   
   lifecycle { 

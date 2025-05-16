@@ -3,10 +3,11 @@ provider "aws" {
 }
 
 resource "aws_instance" "web" {
-  ami           = "ami-062f0cc54dbfd8ef1"
+  count = 2 
+  ami = "ami-062f0cc54dbfd8ef1"
   instance_type = "t2.micro"
   
-  lifecycle { 
-    prevent_destroy = false 
+  tags = { 
+   Name = "frontend-${count.index}"
   }
 }
