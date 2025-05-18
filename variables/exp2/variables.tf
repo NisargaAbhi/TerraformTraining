@@ -7,3 +7,8 @@ variable "instance_name" {
   description = "Name for the EC2 instance"
   type = string  
 }
+
+variable "region" {
+  description = "name of the region"
+  type = string  
+}
