@@ -4,8 +4,13 @@ variable "instance_type" {
 }
 
 variable "instance_name" {
-  description = "Name for the EC2 instance"
-  type = string  
+  description = "Name tag for the instance"
+  type = string
+}
+
+variable "ami" {
+  description = "AMI ID"
+  type        = string
 }
 
 variable "region" {

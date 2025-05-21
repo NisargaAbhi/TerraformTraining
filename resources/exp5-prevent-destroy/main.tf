@@ -8,5 +8,6 @@ resource "aws_instance" "web" {
   
   lifecycle { 
     prevent_destroy = false 
+    ignore_change = [tags]
   }
 }
