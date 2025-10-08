@@ -14,6 +14,6 @@ resource "aws_instance" "frontend" {
 
 resource "aws_instance" "backend" {
   provider = aws.myregion
-  ami = "ami-062f0cc54dbfd8ef1"
+  ami = "ami-077b630ef539aa0b5"
   instance_type = "t2.micro"
 }
